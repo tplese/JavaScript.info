@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- add mocha css, to show results -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+  <!-- add mocha framework code -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+  <script>
+    mocha.setup('bdd'); // minimal setup
+  </script>
+  <!-- add chai -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+  <script>
+    // chai has a lot of stuff, let's make assert global
+    let assert = chai.assert;
+  </script>
+  <!-- add sinon -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sinon.js/7.3.2/sinon.min.js"></script>
+  <script>
+    // require sinon in the tests
+    var sinon = require("sinon");
+  </script>
+</head>
+
+<body>
+
+  <script>
+    "use strict";
+
+    let num = 6.35;
+
+    num *= 10;
+    num = Math.round(num);
+    num /= 10;
+
+
+    alert( num );
+  </script>
+  
+</body>
+
+</html>
