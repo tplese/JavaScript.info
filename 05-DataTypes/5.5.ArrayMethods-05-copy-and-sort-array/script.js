@@ -1,3 +1,5 @@
+"use strict";
+
 function copySorted(arr) {
     let tempArray = [];
     tempArray = tempArray.concat(arr);

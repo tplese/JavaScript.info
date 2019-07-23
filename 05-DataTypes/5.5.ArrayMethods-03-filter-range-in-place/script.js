@@ -1,3 +1,5 @@
+"use strict";
+
 let startArray = [5, 3, 8, 1, 0];
 
 function filterRangeInPlace(arr, a, b) {

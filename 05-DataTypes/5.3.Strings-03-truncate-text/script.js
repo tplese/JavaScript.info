@@ -1,3 +1,5 @@
+"use strict";
+
 function truncate(str, maxlength) {
     if (str.length <= maxlength) return str;
 
