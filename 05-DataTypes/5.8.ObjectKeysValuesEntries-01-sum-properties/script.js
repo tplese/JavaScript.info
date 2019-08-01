@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use strict";
 
 function sumSalaries(salaries) {
@@ -18,3 +19,25 @@ let salaries = {
 
 alert( sumSalaries(salaries) );
 
+=======
+"use strict";
+
+function sumSalaries(salaries) {
+    let sum = 0;
+    
+    for ( let salary of Object.values(salaries) ) {
+        sum += salary;
+    };
+
+    return sum;
+}
+
+let salaries = {
+    "John": 100,
+    "Pete": 300,
+    "Mary": 250           
+};
+
+alert( sumSalaries(salaries) );
+
+>>>>>>> aeeb1565fdcf99dca9886dfc2a676754d51abdc4
