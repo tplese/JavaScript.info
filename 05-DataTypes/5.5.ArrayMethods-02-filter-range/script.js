@@ -1,3 +1,5 @@
+"use strict";
+
 let startingArray = [5, 3, 8, 1]
 
 function filterRange(arr, a, b) {

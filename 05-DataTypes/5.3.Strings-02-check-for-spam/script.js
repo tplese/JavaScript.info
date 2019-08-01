@@ -1,3 +1,5 @@
+"use strict";
+
 function checkSpam(str) {
     str = str.toLowerCase();
 
