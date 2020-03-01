@@ -1,19 +1,15 @@
 "use strict";
 
-function work(a, b) {
-    alert( a + b ); // work is an arbitrary function or method
-}
-  
-function spy(func) {
-    let calls = [];
-
+function f(x) {
+    alert(x);
 }
 
-//work = spy(work);
-  
-work(1, 2); // 3
-work(4, 5); // 9
-  
-for (let args of work.calls) {
-    alert( 'call:' + args.join() ); // "call:1,2", "call:4,5"
+function delay(f, ms) {
+    return function(...args) {
+        setTimeout(() => f.apply(this, args), ms);
+    };
 }
+
+let f1000 = delay(f, 1000);
+
+f1000("test");
